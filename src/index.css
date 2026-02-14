@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 20% 97%;
+    --foreground: 350 30% 20%;
+
+    --card: 0 25% 96%;
+    --card-foreground: 350 30% 20%;
+
+    --popover: 0 20% 97%;
+    --popover-foreground: 350 30% 20%;
+
+    --primary: 350 65% 45%;
+    --primary-foreground: 0 20% 97%;
+
+    --secondary: 350 40% 90%;
+    --secondary-foreground: 350 30% 25%;
+
+    --muted: 350 20% 92%;
+    --muted-foreground: 350 15% 50%;
+
+    --accent: 340 80% 62%;
+    --accent-foreground: 0 20% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 350 20% 88%;
+    --input: 350 20% 88%;
+    --ring: 350 65% 45%;
+
+    --radius: 0.5rem;
+
+    /* Valentine custom tokens */
+    --rose-deep: 350 70% 35%;
+    --rose-soft: 350 60% 70%;
+    --blush: 340 50% 85%;
+    --cream: 30 40% 95%;
+    --parchment: 35 30% 92%;
+    --ink: 350 25% 25%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --font-script: 'Dancing Script', cursive;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 350 20% 8%;
+    --foreground: 0 20% 92%;
+    --card: 350 20% 10%;
+    --card-foreground: 0 20% 92%;
+    --popover: 350 20% 8%;
+    --popover-foreground: 0 20% 92%;
+    --primary: 350 60% 55%;
+    --primary-foreground: 0 20% 97%;
+    --secondary: 350 30% 18%;
+    --secondary-foreground: 0 20% 92%;
+    --muted: 350 20% 15%;
+    --muted-foreground: 350 15% 60%;
+    --accent: 340 70% 55%;
+    --accent-foreground: 0 20% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 350 20% 18%;
+    --input: 350 20% 18%;
+    --ring: 350 60% 55%;
+    --rose-deep: 350 60% 50%;
+    --rose-soft: 350 50% 60%;
+    --blush: 340 40% 30%;
+    --cream: 30 20% 15%;
+    --parchment: 35 15% 18%;
+    --ink: 350 15% 80%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-ink {
+    color: hsl(var(--ink));
+  }
+
+  .bg-parchment {
+    background-color: hsl(var(--parchment));
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+
+  .text-rose-deep {
+    color: hsl(var(--rose-deep));
+  }
+
+  .text-rose-soft {
+    color: hsl(var(--rose-soft));
+  }
+
+  .bg-blush {
+    background-color: hsl(var(--blush));
+  }
+}
