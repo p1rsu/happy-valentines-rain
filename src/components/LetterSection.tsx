@@ -460,6 +460,7 @@ const LetterSection = ({ onRevealed }: LetterSectionProps) => {
                   steady, and beautiful with you. Let's turn our plans into
                   memories, our dreams into reality, and choose each other every
                   day for the rest of our lives. I can't wait to be with you.
+                  I love you baby!
                 </p>
                 <p>
                   And if I may ask for one small favor…
