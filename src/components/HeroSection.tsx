@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToLetter = () => {
-    document.getElementById("letter-section")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("letter-section")?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
