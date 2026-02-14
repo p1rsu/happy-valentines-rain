@@ -10,7 +10,7 @@ const BackgroundMusic = () => {
   const enter = useCallback(() => {
     if (entered) return;
 
-    const audio = new Audio("/a-thousand-years.mp3");
+    const audio = new Audio(import.meta.env.BASE_URL + "a-thousand-years.mp3");
     audio.loop = true;
     audio.volume = 0.2;
     audioRef.current = audio;

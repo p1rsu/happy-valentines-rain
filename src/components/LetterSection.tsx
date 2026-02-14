@@ -399,7 +399,7 @@ const LetterSection = ({ onRevealed }: LetterSectionProps) => {
     >
       <motion.div
         style={{ opacity: letterOpacity, y: letterY }}
-        className="w-full max-w-2xl"
+        className="w-full max-w-lg sm:max-w-2xl"
       >
         <div
           onMouseMove={handleMouseMove}
@@ -409,7 +409,7 @@ const LetterSection = ({ onRevealed }: LetterSectionProps) => {
           <div className="relative">
             {/* ========== THE LETTER ========== */}
             <motion.div
-              className="rounded-sm bg-parchment px-6 py-8 sm:px-14 sm:py-12"
+              className="rounded-sm bg-parchment px-5 py-6 sm:px-14 sm:py-12"
               animate={{
                 rotateY: isRevealed ? mousePos.x * 22 : 0,
                 rotateX: isRevealed ? mousePos.y * -22 : 0,
@@ -429,13 +429,13 @@ const LetterSection = ({ onRevealed }: LetterSectionProps) => {
               }}
               style={{ transformStyle: "preserve-3d" }}
             >
-              <p className="mb-5 text-right font-body text-sm tracking-wide text-muted-foreground sm:mb-8">
+              <p className="mb-3 text-right font-body text-xs tracking-wide text-muted-foreground sm:mb-8 sm:text-sm">
                 February 14, 2026
               </p>
-              <p className="mb-4 font-script text-xl text-primary sm:mb-6 sm:text-3xl">
+              <p className="mb-3 font-script text-lg text-primary sm:mb-6 sm:text-2xl">
                 My Dearest Rain,
               </p>
-              <div className="space-y-3 font-body text-sm leading-relaxed tracking-wide text-ink sm:space-y-5 sm:text-lg sm:leading-relaxed">
+              <div className="space-y-2.5 font-body text-xs leading-relaxed tracking-wide text-ink sm:space-y-5 sm:text-base sm:leading-relaxed">
                 <p>
                   There are words I carry with me that I've never quite been
                   able to say out loud. So I wrote them here, for you. I
@@ -468,15 +468,15 @@ const LetterSection = ({ onRevealed }: LetterSectionProps) => {
                   Let me buy you a flower.
                 </p>
               </div>
-              <div className="mt-6 text-right sm:mt-10">
-                <p className="font-body text-sm tracking-wide text-muted-foreground">
+              <div className="mt-4 text-right sm:mt-10">
+                <p className="font-body text-xs tracking-wide text-muted-foreground sm:text-sm">
                   Forever Yours,
                 </p>
-                <p className="mt-1 font-script text-xl text-primary sm:text-2xl">
+                <p className="mt-1 font-script text-lg text-primary sm:text-2xl">
                   Pierce
                 </p>
               </div>
-              <div className="mx-auto mt-6 h-px w-16 bg-primary/20 sm:mt-10" />
+              <div className="mx-auto mt-4 h-px w-16 bg-primary/20 sm:mt-10" />
             </motion.div>
 
             {/* ========== PAPER COVER ========== */}
